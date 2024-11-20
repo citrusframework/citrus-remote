@@ -262,8 +262,6 @@ public class CitrusRemoteApplication extends AbstractVerticle {
         };
     }
 
-
-
     private TestRunConfiguration constructRunConfig(MultiMap queryParams)
             throws UnsupportedEncodingException {
         TestRunConfiguration runConfiguration = new TestRunConfiguration();
