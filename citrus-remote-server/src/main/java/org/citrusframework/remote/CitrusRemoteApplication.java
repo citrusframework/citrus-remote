@@ -192,6 +192,7 @@ public class CitrusRemoteApplication extends AbstractVerticle {
 
                     List<String> result = Collections.emptyList();
                     if (junitReportsFolder.exists()) {
+                        logger.info("REPORTS EXISTS");
                         result = Optional.ofNullable(junitReportsFolder.list())
                                 .stream()
                                 .flatMap(Stream::of)
@@ -335,7 +336,7 @@ public class CitrusRemoteApplication extends AbstractVerticle {
      */
     private String getJUnitReportsFolder() {
         if (isPresent("org.testng.annotations.Test")) {
-            return "test-output" + File.separator + "junitreports";
+            return "target/citrus-reports" + File.separator + "junitreports";
         } else if (isPresent("org.junit.Test")) {
             JUnitReporter jUnitReporter = new JUnitReporter();
             return jUnitReporter.getReportDirectory() +
