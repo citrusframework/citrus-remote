@@ -161,13 +161,13 @@ build_and_stage_artifacts() {
     cd $working_dir
     if [ $(hasflag --local-release) ]; then
         echo "==== Release to local"
-        ./mvnw ${maven_opts} install
+        ./mvnw ${maven_opts} install -pl '!:citrus-remote-sample'
     elif [ $(hasflag --snapshot-release) ]; then
         echo "==== Release snapshot to local"
-        ./mvnw ${maven_opts} install
+        ./mvnw ${maven_opts} install -pl '!:citrus-remote-sample'
     else
         echo "==== Release to Maven central and stage artifacts to Sonatype"
-        ./mvnw ${maven_opts} install deploy -DfailIfNoTests=false -Dtest -Dit.test -Prelease-central -DstagingDescription="Staging Citrus Remote for v$release_version"
+        ./mvnw ${maven_opts} install deploy -pl '!:citrus-remote-sample' -DfailIfNoTests=false -Dtest -Dit.test -Prelease-central -DstagingDescription="Staging Citrus Remote for v$release_version"
     fi
 }
 
