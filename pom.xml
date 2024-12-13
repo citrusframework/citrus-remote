@@ -29,34 +29,34 @@
     <maven.assembly.plugin.version>3.7.1</maven.assembly.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
     <maven.clean.plugin.version>3.3.1</maven.clean.plugin.version>
-    <maven.dependency.plugin.version>3.6.0</maven.dependency.plugin.version>
+    <maven.dependency.plugin.version>3.8.1</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.1.1</maven.deploy.plugin.version>
     <maven.failsafe.plugin.version>2.22.2</maven.failsafe.plugin.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
-    <maven.helper.plugin.version>3.4.0</maven.helper.plugin.version>
+    <maven.helper.plugin.version>3.6.0</maven.helper.plugin.version>
     <maven.install.plugin.version>3.1.1</maven.install.plugin.version>
     <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
-    <maven.javadoc.plugin.version>3.5.0</maven.javadoc.plugin.version>
+    <maven.javadoc.plugin.version>3.11.2</maven.javadoc.plugin.version>
     <maven.nexus-staging.plugin.version>1.6.13</maven.nexus-staging.plugin.version>
     <maven.plugin.annotations.version>3.13.1</maven.plugin.annotations.version>
     <maven.plugin.plugin.version>3.9.0</maven.plugin.plugin.version>
     <maven.release.plugin.version>3.0.1</maven.release.plugin.version>
-    <maven.resources.plugin.version>3.0.2</maven.resources.plugin.version>
+    <maven.resource.plugin.version>3.3.1</maven.resource.plugin.version>
     <maven.scm.plugin.version>1.11.2</maven.scm.plugin.version>
     <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
     <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
     <maven.war.plugin.version>3.4.0</maven.war.plugin.version>
-    <apache.rat.plugin.version>0.15</apache.rat.plugin.version>
+    <apache.rat.plugin.version>0.16.1</apache.rat.plugin.version>
 
-    <citrus.version>4.4.0</citrus.version>
+    <citrus.version>4.5.0</citrus.version>
     <commons.logging.api.version>1.1</commons.logging.api.version>
-    <commons.logging.version>1.3.3</commons.logging.version>
-    <httpclient.version>5.3.1</httpclient.version>
-    <jackson.version>2.17.2</jackson.version>
-    <log4j2.version>2.22.1</log4j2.version>
+    <commons.logging.version>1.3.4</commons.logging.version>
+    <httpclient.version>5.4.1</httpclient.version>
+    <jackson.version>2.18.2</jackson.version>
+    <log4j2.version>2.23.1</log4j2.version>
     <slf4j.version>2.0.11</slf4j.version>
-    <vertx.version>4.5.9</vertx.version>
-    <xstream.version>1.4.20</xstream.version>
+    <vertx.version>4.5.10</vertx.version>
+    <xstream.version>1.4.21</xstream.version>
 
     <!-- Documentation -->
     <javadoc.options>-Xdoclint:none</javadoc.options>
@@ -331,7 +331,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>${maven.resources.plugin.version}</version>
+          <version>${maven.resource.plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
