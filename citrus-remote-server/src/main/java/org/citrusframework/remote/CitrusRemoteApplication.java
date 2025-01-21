@@ -192,7 +192,6 @@ public class CitrusRemoteApplication extends AbstractVerticle {
 
                     List<String> result = Collections.emptyList();
                     if (junitReportsFolder.exists()) {
-                        logger.info("REPORTS EXISTS");
                         result = Optional.ofNullable(junitReportsFolder.list())
                                 .stream()
                                 .flatMap(Stream::of)
