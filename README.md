@@ -2,7 +2,7 @@ Citrus Remote ![Logo][1]
 ==============
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.consol.citrus/citrus-remote/badge.svg?style=flat-square)](https://central.sonatype.com/search?q=g%253Acom.consol.citrus)
-[![build](https://github.com/citrusframework/citrus-remote/workflows/build/badge.svg?branch=main)](https://github.com/citrusframework/citrus-remote/actions)
+[![build](https://github.com/citrusframework/citrus-remote/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/citrusframework/citrus-remote/actions)
 [![Javadocs](http://javadoc.io/badge/com.consol.citrus/citrus-remote-server.svg)](http://javadoc.io/doc/com.consol.citrus/citrus-remote-server)
 [![Licensed under Apache License version 2.0](https://img.shields.io/github/license/openshift/origin.svg?maxAge=2592000)](https://www.apache.org/licenses/LICENSE-2.0")
 [![Chat on Zulip](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://citrusframework.zulipchat.com)
