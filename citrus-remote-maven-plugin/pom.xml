@@ -87,10 +87,10 @@
     </dependency>
 
     <dependency>
-      <groupId>org.sonatype.plexus</groupId>
+      <groupId>org.codehaus.plexus</groupId>
       <artifactId>plexus-sec-dispatcher</artifactId>
       <scope>provided</scope>
-      <version>1.4</version>
+      <version>4.1.0</version>
     </dependency>
 
     <dependency>
@@ -103,7 +103,7 @@
       <groupId>org.codehaus.plexus</groupId>
       <artifactId>plexus-utils</artifactId>
       <scope>provided</scope>
-      <version>4.0.1</version>
+      <version>4.0.2</version>
     </dependency>
 
     <dependency>
@@ -116,7 +116,7 @@
     <dependency>
       <groupId>org.codehaus.plexus</groupId>
       <artifactId>plexus-interactivity-api</artifactId>
-      <version>1.0-alpha-6</version>
+      <version>1.4</version>
     </dependency>
 
     <!-- Logging -->
