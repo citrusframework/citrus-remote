@@ -65,7 +65,7 @@ public class RemoteTestListener implements TestListener {
     }
 
     @Override
-    public void onTestFinish(TestCase test) {
+    public void onTestExecutionEnd(TestCase test) {
         // NOOP
     }
 
