@@ -352,6 +352,13 @@
             <skipTests>${skip.unit.tests}</skipTests>
             <workingDirectory>${project.build.directory}</workingDirectory>
           </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.surefire</groupId>
+              <artifactId>surefire-testng</artifactId>
+              <version>${maven.surefire.plugin.version}</version>
+            </dependency>
+          </dependencies>
         </plugin>
 
         <plugin>
@@ -371,6 +378,13 @@
               </configuration>
             </execution>
           </executions>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.surefire</groupId>
+              <artifactId>surefire-testng</artifactId>
+              <version>${maven.surefire.plugin.version}</version>
+            </dependency>
+          </dependencies>
         </plugin>
 
         <plugin>
