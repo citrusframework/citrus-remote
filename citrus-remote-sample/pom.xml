@@ -19,7 +19,7 @@
         <download-maven-plugin.version>1.9.0</download-maven-plugin.version>
 
         <!-- Dependency versions -->
-        <citrus.version>4.6.0</citrus.version>
+        <citrus.version>4.7.0</citrus.version>
         <spring.version>6.2.6</spring.version>
 
         <!-- Project setup -->

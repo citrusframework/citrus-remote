@@ -48,7 +48,7 @@
     <maven.war.plugin.version>3.4.0</maven.war.plugin.version>
     <apache.rat.plugin.version>0.16.1</apache.rat.plugin.version>
 
-    <citrus.version>4.6.0</citrus.version>
+    <citrus.version>4.7.0</citrus.version>
     <commons.logging.version>1.3.5</commons.logging.version>
     <httpclient.version>5.4.4</httpclient.version>
     <jackson.version>2.18.3</jackson.version>
