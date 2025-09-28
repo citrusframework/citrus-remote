@@ -48,10 +48,11 @@
     <maven.war.plugin.version>3.4.0</maven.war.plugin.version>
     <apache.rat.plugin.version>0.16.1</apache.rat.plugin.version>
 
-    <citrus.version>4.8.0</citrus.version>
+    <citrus.version>4.8.1</citrus.version>
     <commons.logging.version>1.3.5</commons.logging.version>
     <httpclient.version>5.5</httpclient.version>
-    <jackson.version>2.19.2</jackson.version>
+    <jackson.version>2.20.0</jackson.version>
+    <jackson.version.short>2.20</jackson.version.short>
     <log4j2.version>2.25.1</log4j2.version>
     <slf4j.version>2.0.17</slf4j.version>
     <vertx.version>4.5.15</vertx.version>
@@ -168,7 +169,7 @@
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
-        <version>${jackson.version}</version>
+        <version>${jackson.version.short}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
