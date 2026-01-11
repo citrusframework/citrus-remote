@@ -16,6 +16,7 @@
 
 package org.citrusframework.remote.plugin;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.hc.core5.http.*;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
@@ -71,7 +72,7 @@ public class RunTestMojo extends AbstractCitrusRemoteMojo {
     /**
      * Object mapper for JSON response to object conversion.
      */
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper().setDefaultPropertyInclusion(JsonInclude.Include.NON_NULL);
 
     private static String parseResultToStringRepresentation(TestResult result) {
         if (result.isSkipped()) {
@@ -130,7 +131,7 @@ public class RunTestMojo extends AbstractCitrusRemoteMojo {
 
         List<TestSource> testSources = classes.stream()
                 .map(TestClass::fromString)
-                .map(testClass -> (TestSource) testClass)
+                .map(TestSource.class::cast)
                 .toList();
         runConfiguration.setTestSources(testSources);
 
@@ -175,7 +176,7 @@ public class RunTestMojo extends AbstractCitrusRemoteMojo {
 
             requestBuilder.addHeader(new BasicHeader(HttpHeaders.ACCEPT, ContentType.APPLICATION_JSON.getMimeType()));
 
-            StringEntity body = new StringEntity(new ObjectMapper().writeValueAsString(runConfiguration), ContentType.APPLICATION_JSON);
+            StringEntity body = new StringEntity(objectMapper.writeValueAsString(runConfiguration), ContentType.APPLICATION_JSON);
             requestBuilder.setEntity(body);
 
             try (var response = getHttpClient().executeOpen(null, requestBuilder.build(), null)) {
