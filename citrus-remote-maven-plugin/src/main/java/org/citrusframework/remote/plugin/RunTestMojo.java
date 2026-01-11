@@ -131,7 +131,7 @@ public class RunTestMojo extends AbstractCitrusRemoteMojo {
 
         List<TestSource> testSources = classes.stream()
                 .map(TestClass::fromString)
-                .map(testClass -> (TestSource) testClass)
+                .map(TestSource.class::cast)
                 .toList();
         runConfiguration.setTestSources(testSources);
 
