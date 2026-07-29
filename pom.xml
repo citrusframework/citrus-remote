@@ -533,6 +533,7 @@
             <extensions>true</extensions>
             <configuration>
               <publishingServerId>sonatype-central</publishingServerId>
+              <checksums>required</checksums>
               <excludeArtifacts>
                 <artifact>citrus-remote-sample</artifact>
               </excludeArtifacts>
